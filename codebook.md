@@ -1,6 +1,7 @@
 # samsung-dataCode Book
 
 Transformations performed:
+
 1)	Subject_test, X_test, Y-test and Subject_train, X_train, Y_train datasets were red using table.read function
 2)	3 datasets ending with “_test” were combined into one dataset test_all using column binding function cbind(). Same was done with datasets ending with “_train” resulting in train_all dataset
 3)	Test_all and Train_all were combined using row binding function rbind() into Data_full dataset
@@ -29,6 +30,7 @@ For each record Data_aggreagted dataset provides:
 - Activity type
 - An identifier of the subject who carried out the experiment.
 - Averages of Means and Standard Deviations of  time and frequency domain variables grouped by Activity and PersonID.
+- 
 Here is the full list of variables in Data_Aggregated dataset:
 Activity
 PersonID
