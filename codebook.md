@@ -3,15 +3,25 @@
 Transformations performed:
 
 1)	Subject_test, X_test, Y-test and Subject_train, X_train, Y_train datasets were red using table.read function
+
 2)	3 datasets ending with “_test” were combined into one dataset test_all using column binding function cbind(). Same was done with datasets ending with “_train” resulting in train_all dataset
+
 3)	Test_all and Train_all were combined using row binding function rbind() into Data_full dataset
+
 4)	Names of the features from Features.txt file were recorded into Names vector
+
 5)	PersonID and ActivityID were added to name vector resulting in Columnames vector
+
 6)	Columnames vector was used to assign variable names for Data_full dataset
+
 7)	Grepl function was used to subset Data_full to only Mean and Std columns (+ ActivityID and PersonID)
+
 8)	Sub function was used to give meaningfull names to Data_full variables: substituting unfamiliar abbreviations with meaningful words
+
 9)	Activity variable was created with descriptive activity names
+
 10)	Data_aggregated dataset was created with averages of each variable for each activity and subject
+
 11)	AVG prefix was added to all variables in Data_aggregated dataset to indicate that it contains averages. By groups variable were renamed to Activity and PersonID
 
 Variables and Data description
@@ -24,11 +34,17 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 The set of variables that were estimated from these signals are: 
+
 mean(): Mean value
+
 std(): Standard deviation
+
 For each record Data_aggreagted dataset provides:
+
 - Activity type
+
 - An identifier of the subject who carried out the experiment.
+
 - Averages of Means and Standard Deviations of  time and frequency domain variables grouped by Activity and PersonID.
 - 
 Here is the full list of variables in Data_Aggregated dataset:
