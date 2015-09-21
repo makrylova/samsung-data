@@ -1,10 +1,12 @@
-setwd("F:/coursera/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test")
+setwd("F:/coursera")
+setwd(paste(getwd(),"/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test",sep=""))
 test = read.table("X_test.txt")
 test_label = read.table("y_test.txt")
 subject_test = read.table("subject_test.txt")
 test_all <-cbind(test,subject_test,test_label)
 
-setwd("F:/coursera/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train")
+setwd("F:/coursera")
+setwd(paste(getwd(),"/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train",sep=""))
 train = read.table("X_train.txt")
 subject_train = read.table("subject_train.txt")
 train_label = read.table("y_train.txt")
@@ -12,7 +14,8 @@ train_all <-cbind(train,subject_train,train_label)
 
 data_full<-rbind(test_all,train_all)
 
-setwd("F:/coursera/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset")
+setwd("F:/coursera")
+setwd(paste(getwd(),"/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset",sep=""))
 options( stringsAsFactors=F ) 
 names = read.table("features.txt")[,2]
 addnames<- c("PersonID", "ActivityID")
