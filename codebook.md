@@ -47,7 +47,7 @@ For each record Data_aggreagted dataset provides:
 - An identifier of the subject who carried out the experiment.
 
 - Averages of Means and Standard Deviations of  time and frequency domain variables grouped by Activity and PersonID.
-- 
+
 Here is the full list of variables in Data_Aggregated dataset:
 Activity
 PersonID
