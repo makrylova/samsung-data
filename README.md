@@ -1,9 +1,15 @@
 # samsung-dataREADME :
 #### Subject_test, X_test, Y-test datasets were red using table.read function
-setwd("F:/coursera/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test")
+setwd("F:/coursera")
+
+setwd(paste(getwd(),"/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test",sep=""))
+
 test = read.table("X_test.txt")
+
 test_label = read.table("y_test.txt")
+
 subject_test = read.table("subject_test.txt")
+
 #### 3 above datasets  were combined into one dataset test_all using column binding function cbind()
 test_all <-cbind(test,subject_test,test_label)
 #### Subject_train, X_ train, Y- train datasets were red using table.read function
